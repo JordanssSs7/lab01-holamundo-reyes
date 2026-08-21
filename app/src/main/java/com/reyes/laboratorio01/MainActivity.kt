@@ -12,6 +12,7 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import com.reyes.laboratorio01.ui.theme.Laboratorio01Theme
 
@@ -34,7 +35,7 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Column(modifier = modifier) {
+    Column(modifier = modifier)  /* para que los textos aparezcan uno debajo del otro*/{
 
         Text(
             text = "Hola, soy  $name!",
@@ -48,7 +49,8 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
         )
 
         Text(
-            text = "Carrera: Diseño y desarrollo de software"
+            text = "Carrera: Diseño y desarrollo de software",
+            color = Color.Blue
         )
 
         Button(onClick = { }) {
