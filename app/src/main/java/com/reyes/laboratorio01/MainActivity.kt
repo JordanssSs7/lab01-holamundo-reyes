@@ -46,6 +46,10 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
             text = "Correo: jordan.reyes@tecsup.edu.pe"
         )
 
+        Text(
+            text = "Carrera: Diseño y desarrollo de software"
+        )
+
     }
 }
 
